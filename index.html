@@ -24,11 +24,11 @@
         <legend>
             Display<br>
             <label for="flex">
-                <input onclick='ContainerProperty("flex", "display")' id="flex" type="radio" name="display"> 
+                <input onclick='property("cont", "flex", "display")' id="flex" type="radio" name="display"> 
                 flex
             </label><br>
             <label for="inline">
-                <input onclick='ContainerProperty("inline-flex", "display")' id="inline" type="radio" name="display"> 
+                <input onclick='property("cont", "inline-flex", "display")' id="inline" type="radio" name="display"> 
                 inline-flex
             </label>
         </legend>
@@ -36,19 +36,19 @@
         <legend>
             Flex-Direction<br>
             <label for="row">
-                <input onclick='ContainerProperty("row", "flex-direction")' id="row" type="radio" name="flex-direction"> 
+                <input onclick='property("cont", "row", "flex-direction")' id="row" type="radio" name="flex-direction"> 
                 row
             </label><br>
             <label for="row-reverse">
-                <input onclick='ContainerProperty("row-reverse", "flex-direction")' id="row-reverse" type="radio" name="flex-direction"> 
+                <input onclick='property("cont", "row-reverse", "flex-direction")' id="row-reverse" type="radio" name="flex-direction"> 
                 row-reverse
             </label><br>
             <label for="column">
-                <input onclick='ContainerProperty("column", "flex-direction")' id="column" type="radio" name="flex-direction"> 
+                <input onclick='property("cont", "column", "flex-direction")' id="column" type="radio" name="flex-direction"> 
                 column
             </label><br>
             <label for="column-reverse">
-                <input onclick='ContainerProperty("column-reverse", "flex-direction")' id="column-reverse" type="radio" name="flex-direction"> 
+                <input onclick='property("cont", "column-reverse", "flex-direction")' id="column-reverse" type="radio" name="flex-direction"> 
                 column-reverse
             </label><br>
         </legend>
@@ -56,15 +56,15 @@
         <legend>
             Flex-Wrap<br>
             <label for="nowrap">
-                <input onclick='ContainerProperty("nowrap", "flex-wrap")' id="nowrap" type="radio" name="flex-wrap"> 
+                <input onclick='property("cont", "nowrap", "flex-wrap")' id="nowrap" type="radio" name="flex-wrap"> 
                 nowrap
             </label><br>
             <label for="wrap">
-                <input onclick='ContainerProperty("wrap", "flex-wrap")' id="wrap" type="radio" name="flex-wrap"> 
+                <input onclick='property("cont", "wrap", "flex-wrap")' id="wrap" type="radio" name="flex-wrap"> 
                 wrap
             </label><br>
             <label for="wrap-reverse">
-                <input onclick='ContainerProperty("wrap-reverse", "flex-wrap")' id="wrap-reverse" type="radio" name="flex-wrap"> 
+                <input onclick='property("cont", "wrap-reverse", "flex-wrap")' id="wrap-reverse" type="radio" name="flex-wrap"> 
                 wrap-reverse
             </label><br>
         </legend>
@@ -72,27 +72,27 @@
         <legend>
             Justify-Content<br>
             <label for="flex-start">
-                <input onclick='ContainerProperty("flex-start", "justify-content")' id="flex-start" type="radio" name="justify-content"> 
+                <input onclick='property("cont", "flex-start", "justify-content")' id="flex-start" type="radio" name="justify-content"> 
                 flex-start
             </label><br>
             <label for="flex-end">
-                <input onclick='ContainerProperty("flex-end", "justify-content")' id="flex-end" type="radio" name="justify-content"> 
+                <input onclick='property("cont", "flex-end", "justify-content")' id="flex-end" type="radio" name="justify-content"> 
                 flex-end
             </label><br>
             <label for="center">
-                <input onclick='ContainerProperty("center", "justify-content")' id="center" type="radio" name="justify-content"> 
+                <input onclick='property("cont", "center", "justify-content")' id="center" type="radio" name="justify-content"> 
                 center
             </label><br>
             <label for="space-between">
-                <input onclick='ContainerProperty("space-between", "justify-content")' id="space-between" type="radio" name="justify-content"> 
+                <input onclick='property("cont", "space-between", "justify-content")' id="space-between" type="radio" name="justify-content"> 
                 space-between
             </label><br>
             <label for="space-around">
-                <input onclick='ContainerProperty("space-around", "justify-content")' id="space-around" type="radio" name="justify-content"> 
+                <input onclick='property("cont", "space-around", "justify-content")' id="space-around" type="radio" name="justify-content"> 
                 space-around
             </label><br>
             <label for="space-evenly">
-                <input onclick='ContainerProperty("space-evenly", "justify-content")' id="space-between" type="radio" name="justify-content"> 
+                <input onclick='property("cont", "space-evenly", "justify-content")' id="space-between" type="radio" name="justify-content"> 
                 space-evenly
             </label><br>
         </legend>
@@ -100,23 +100,23 @@
         <legend>
             Align-Items<br>
             <label for="stretch">
-                <input onclick='ContainerProperty("stretch", "align-items")' id="stretch" type="radio" name="align-items"> 
+                <input onclick='property("cont", "stretch", "align-items")' id="stretch" type="radio" name="align-items"> 
                 stretch
             </label><br>
             <label for="center">
-                <input onclick='ContainerProperty("center", "align-items")' id="center" type="radio" name="align-items"> 
+                <input onclick='property("cont", "center", "align-items")' id="center" type="radio" name="align-items"> 
                 center
             </label><br>
             <label for="baseline">
-                <input onclick='ContainerProperty("baseline", "align-items")' id="baseline" type="radio" name="align-items"> 
+                <input onclick='property("cont", "baseline", "align-items")' id="baseline" type="radio" name="align-items"> 
                 baseline
             </label><br>
             <label for="flex-start">
-                <input onclick='ContainerProperty("flex-start", "align-items")' id="flex-start" type="radio" name="align-items"> 
+                <input onclick='property("cont", "flex-start", "align-items")' id="flex-start" type="radio" name="align-items"> 
                 flex-start
             </label><br>
             <label for="flex-end">
-                <input onclick='ContainerProperty("flex-end", "align-items")' id="flex-end" type="radio" name="align-items"> 
+                <input onclick='property("cont", "flex-end", "align-items")' id="flex-end" type="radio" name="align-items"> 
                 flex-end
             </label><br>
         </legend>
@@ -124,35 +124,35 @@
         <legend>
             Align-Content<br>
             <label for="normal">
-                <input onclick='ContainerProperty("normal", "align-content")' id="normal" type="radio" name="align-content"> 
+                <input onclick='property("cont", "normal", "align-content")' id="normal" type="radio" name="align-content"> 
                 normal
             </label><br>
             <label for="flex-start">
-                <input onclick='ContainerProperty("flex-start", "align-content")' id="flex-start" type="radio" name="align-content"> 
+                <input onclick='property("cont", "flex-start", "align-content")' id="flex-start" type="radio" name="align-content"> 
                 flex-start
             </label><br>
             <label for="flex-end">
-                <input onclick='ContainerProperty("flex-end", "align-content")' id="flex-end" type="radio" name="align-content"> 
+                <input onclick='property("cont", "flex-end", "align-content")' id="flex-end" type="radio" name="align-content"> 
                 flex-end
             </label><br>
             <label for="center">
-                <input onclick='ContainerProperty("center", "align-content")' id="center" type="radio" name="align-content"> 
+                <input onclick='property("cont", "center", "align-content")' id="center" type="radio" name="align-content"> 
                 center
             </label><br>
             <label for="stretch">
-                <input onclick='ContainerProperty("stretch", "align-content")' id="stretch" type="radio" name="align-content"> 
+                <input onclick='property("cont", "stretch", "align-content")' id="stretch" type="radio" name="align-content"> 
                 stretch
             </label><br>
             <label for="space-between">
-                <input onclick='ContainerProperty("space-between", "align-content")' id="space-between" type="radio" name="align-content"> 
+                <input onclick='property("space-between", "align-content")' id="space-between" type="radio" name="align-content"> 
                 space-between
             </label><br>
             <label for="space-around">
-                <input onclick='ContainerProperty("space-around", "align-content")' id="space-around" type="radio" name="align-content"> 
+                <input onclick='property("cont", "space-around", "align-content")' id="space-around" type="radio" name="align-content"> 
                 space-around
             </label><br>
             <label for="space-evenly">
-                <input onclick='ContainerProperty("space-evenly", "align-content")' id="space-evenly" type="radio" name="align-content"> 
+                <input onclick='property("cont", "space-evenly", "align-content")' id="space-evenly" type="radio" name="align-content"> 
                 space-evenly
             </label><br>
         </legend>

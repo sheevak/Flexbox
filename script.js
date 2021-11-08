@@ -1,9 +1,5 @@
-function ContainerProperty(i, j) {
-    document.getElementById("cont").style.setProperty(j, i);
-};
-
-function ItemProperty(i, j) {
-    document.getElementById("item").style.setProperty(j, i);
+function property(elementId, value, property) {
+    document.getElementById(elementId).style.setProperty(property, value);
 };
 
 function Dimentions(width, height) {
