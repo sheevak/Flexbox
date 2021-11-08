@@ -1,0 +1,13 @@
+#cont {
+    border: 5px solid red;
+}
+
+.item {
+    border: 2px solid;
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+}
