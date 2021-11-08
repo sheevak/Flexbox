@@ -2,174 +2,154 @@
 <html lang="en">
 <head>
     <title>CSS Flexbox</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mohave&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>CSS Flexbox</h1>
-
-    <h3>Flex Container Properties</h3>
-    <Label>
-        <input id="width" type="number">
-        Width
-    </Label>
-    <Label>
-        <input id="height" type="number">
-        Height
-    </Label>
+    <header>
+        <h1>CSS Flexbox</h1>
+    </header>
     
-    <button onclick="Dimentions(width.value, height.value)">Submit Dimentions</button>
+    <main>
+        <div class="card">
+            <h3>Flex Container Properties</h3>
+            <Label>
+                Width:
+                <input id="width" type="number">
+                px
+            </Label>
+            <Label>
+                Height:
+                <input id="height" type="number">
+                px
+            </Label>
 
-    <div class="options">
-        <legend>
-            Display<br>
-            <label for="flex">
-                <input onclick='property("cont", "flex", "display")' id="flex" type="radio" name="display"> 
-                flex
-            </label><br>
-            <label for="inline">
-                <input onclick='property("cont", "inline-flex", "display")' id="inline" type="radio" name="display"> 
-                inline-flex
-            </label>
-        </legend>
-    
-        <legend>
-            Flex-Direction<br>
-            <label for="row">
-                <input onclick='property("cont", "row", "flex-direction")' id="row" type="radio" name="flex-direction"> 
-                row
-            </label><br>
-            <label for="row-reverse">
-                <input onclick='property("cont", "row-reverse", "flex-direction")' id="row-reverse" type="radio" name="flex-direction"> 
-                row-reverse
-            </label><br>
-            <label for="column">
-                <input onclick='property("cont", "column", "flex-direction")' id="column" type="radio" name="flex-direction"> 
-                column
-            </label><br>
-            <label for="column-reverse">
-                <input onclick='property("cont", "column-reverse", "flex-direction")' id="column-reverse" type="radio" name="flex-direction"> 
-                column-reverse
-            </label><br>
-        </legend>
-
-        <legend>
-            Flex-Wrap<br>
-            <label for="nowrap">
-                <input onclick='property("cont", "nowrap", "flex-wrap")' id="nowrap" type="radio" name="flex-wrap"> 
-                nowrap
-            </label><br>
-            <label for="wrap">
-                <input onclick='property("cont", "wrap", "flex-wrap")' id="wrap" type="radio" name="flex-wrap"> 
-                wrap
-            </label><br>
-            <label for="wrap-reverse">
-                <input onclick='property("cont", "wrap-reverse", "flex-wrap")' id="wrap-reverse" type="radio" name="flex-wrap"> 
-                wrap-reverse
-            </label><br>
-        </legend>
-
-        <legend>
-            Justify-Content<br>
-            <label for="flex-start">
-                <input onclick='property("cont", "flex-start", "justify-content")' id="flex-start" type="radio" name="justify-content"> 
-                flex-start
-            </label><br>
-            <label for="flex-end">
-                <input onclick='property("cont", "flex-end", "justify-content")' id="flex-end" type="radio" name="justify-content"> 
-                flex-end
-            </label><br>
-            <label for="center">
-                <input onclick='property("cont", "center", "justify-content")' id="center" type="radio" name="justify-content"> 
-                center
-            </label><br>
-            <label for="space-between">
-                <input onclick='property("cont", "space-between", "justify-content")' id="space-between" type="radio" name="justify-content"> 
-                space-between
-            </label><br>
-            <label for="space-around">
-                <input onclick='property("cont", "space-around", "justify-content")' id="space-around" type="radio" name="justify-content"> 
-                space-around
-            </label><br>
-            <label for="space-evenly">
-                <input onclick='property("cont", "space-evenly", "justify-content")' id="space-between" type="radio" name="justify-content"> 
-                space-evenly
-            </label><br>
-        </legend>
-
-        <legend>
-            Align-Items<br>
-            <label for="stretch">
-                <input onclick='property("cont", "stretch", "align-items")' id="stretch" type="radio" name="align-items"> 
-                stretch
-            </label><br>
-            <label for="center">
-                <input onclick='property("cont", "center", "align-items")' id="center" type="radio" name="align-items"> 
-                center
-            </label><br>
-            <label for="baseline">
-                <input onclick='property("cont", "baseline", "align-items")' id="baseline" type="radio" name="align-items"> 
-                baseline
-            </label><br>
-            <label for="flex-start">
-                <input onclick='property("cont", "flex-start", "align-items")' id="flex-start" type="radio" name="align-items"> 
-                flex-start
-            </label><br>
-            <label for="flex-end">
-                <input onclick='property("cont", "flex-end", "align-items")' id="flex-end" type="radio" name="align-items"> 
-                flex-end
-            </label><br>
-        </legend>
-
-        <legend>
-            Align-Content<br>
-            <label for="normal">
-                <input onclick='property("cont", "normal", "align-content")' id="normal" type="radio" name="align-content"> 
-                normal
-            </label><br>
-            <label for="flex-start">
-                <input onclick='property("cont", "flex-start", "align-content")' id="flex-start" type="radio" name="align-content"> 
-                flex-start
-            </label><br>
-            <label for="flex-end">
-                <input onclick='property("cont", "flex-end", "align-content")' id="flex-end" type="radio" name="align-content"> 
-                flex-end
-            </label><br>
-            <label for="center">
-                <input onclick='property("cont", "center", "align-content")' id="center" type="radio" name="align-content"> 
-                center
-            </label><br>
-            <label for="stretch">
-                <input onclick='property("cont", "stretch", "align-content")' id="stretch" type="radio" name="align-content"> 
-                stretch
-            </label><br>
-            <label for="space-between">
-                <input onclick='property("space-between", "align-content")' id="space-between" type="radio" name="align-content"> 
-                space-between
-            </label><br>
-            <label for="space-around">
-                <input onclick='property("cont", "space-around", "align-content")' id="space-around" type="radio" name="align-content"> 
-                space-around
-            </label><br>
-            <label for="space-evenly">
-                <input onclick='property("cont", "space-evenly", "align-content")' id="space-evenly" type="radio" name="align-content"> 
-                space-evenly
-            </label><br>
-        </legend>
-    </div>
-
-    <h3>Flex Item Properties</h3>
-    <div class="options">
+            <button onclick="dimentions(width.value, height.value)">Submit</button>
 
 
-    </div>
+            <div class="options">
+                <label for="display">
+                    Display:
+                    <select onchange='property("cont", this, "display")' name="display" id="display">
+                        <option value="flex">Flex</option>
+                        <option value="inline-flex">Inline-Flex</option>
+                    </select>
+                </label>
+                
+                <label for="flexDirection">
+                    Flex-Direction:
+                    <select onchange='property("cont", this, "flex-direction")' name="flexDirection" id="flexDirection">
+                        <option value="row">Row</option>
+                        <option value="row-reverse">Row-Reverse</option>
+                        <option value="column">Column</option>
+                        <option value="column-reverse">Column-Reverse</option>
+                    </select>
+                </label>
 
-    <div id="cont">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
+                <label for="flexWrap">
+                    Flex-Wrap:
+                    <select onchange='property("cont", this, "flex-wrap")' name="flexWrap" id="flexWrap">
+                        <option value="no-wrap">No-Wrap</option>
+                        <option value="wrap">Wrap</option>
+                        <option value="wrap-reverse">Wrap-Reverse</option>
+                    </select>
+                </label>    
+
+                <label for="justifyContent">
+                    Justify-Content:
+                    <select onchange='property("cont", this, "justify-content")' name="justifyContent" id="justifyContent">
+                        <option value="flex-start">Flex-Start</option>
+                        <option value="flex-end">Flex-End</option>
+                        <option value="center">Center</option>
+                        <option value="space-between">Space-Between</option>
+                        <option value="space-around">Space-Around</option>
+                        <option value="space-evenly">Space-Evenly</option>
+                    </select>
+                </label>
+
+                <label for="alignItems">
+                    Align-Items:
+                    <select onchange='property("cont", this, "align-items")' name="alignItems" id="alignItems">
+                        <option value="stretch">Stretch</option>
+                        <option value="flex-start">Flex-Start</option>
+                        <option value="flex-end">Flex-End</option>
+                        <option value="center">Center</option>
+                        <option value="baseline">Baseline</option>
+                    </select>
+                </label>
+
+                <label for="alignContent">
+                    Align-Content:
+                    <select onchange='property("cont", this, "align-items")' name="alignContent" id="alignContent">
+                        <option value="normal">Normal</option>
+                        <option value="stretch">Stretch</option>
+                        <option value="flex-start">Flex-Start</option>
+                        <option value="flex-end">Flex-End</option>
+                        <option value="center">Center</option>
+                        <option value="space-between">Space-Between</option>
+                        <option value="space-around">Space-Around</option>
+                        <option value="space-evenly">Space-Evenly</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Flex Item Properties</h3>
+            
+            <div class="options">
+                <label for="item">
+                    Item:
+                    <select onchange='itemSelect(this)' name="item" id="item">
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                    </select>
+                </label>
+
+                <Label>Order: <br>
+                    <input onchange='property(selectedItem, this, "order")' id="order" type="number">
+                </Label>
+
+                <Label>Flex-Grow: <br>
+                    <input onchange='property(selectedItem, this, "flex-grow")' id="flex-grow" type="number">
+                </Label>
+
+                <Label>
+                    Flex-Shrink: <br>
+                    <input onchange='property(selectedItem, this, "flex-shrink")' id="flex-shrink" type="number">
+                </Label>
+
+                <Label>
+                    Flex-Basis:<br>
+                    <input onchange='property(selectedItem, this, "flex-basis")' id="flex-shrink" type="number">
+                </Label>
+
+                <label for="alignSelf">
+                    Align-Self:
+                    <select onchange='property(selectedItem, this, "align-self")' name="alignSelf" id="alignSelf">
+                        <option value="auto">auto</option>
+                        <option value="stretch">Stretch</option>
+                        <option value="flex-start">Flex-Start</option>
+                        <option value="flex-end">Flex-End</option>
+                        <option value="center">Center</option>
+                        <option value="baseline">Baseline</option>
+                    </select>
+                </label>
+
+            </div>
+        </div>
+    </main>
+
+    <div id="cont" class="card">
+        <div id="one" class="item">1</div>
+        <div id="two" class="item">2</div>
+        <div id="three" class="item">3</div>
+        <div id="four" class="item">4</div>
+        <div id="five" class="item">5</div>
     </div>
 </body>
 </html>
